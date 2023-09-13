@@ -14,7 +14,22 @@
   <body>
     <header class="header">
       <a href="/" class="header__title">Crafted Coffee Co.</a>
-      <nav>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu__container">
+        <input type="checkbox" id="menuToggle" />
+
+        <label for="menuToggle" class="hamburger-icon"> &#9776; </label>
+
+        <nav class="mobile-menu">
+          <a href="./about">About</a>
+          <a href="./menu">Services</a>
+          <a href="./contact">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Desktop menu -->
+      <nav class="desktop-menu">
         <ul class="nav__list">
           <li class="nav__list-item"><a href="./about">About Us</a></li>
           <li class="nav__list-item"><a href="./menu">Menu</a></li>
