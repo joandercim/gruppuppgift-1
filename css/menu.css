@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+#hero {
+    background: url(../images/menuhero.jpeg);
+    background-size: cover;
+    background-position: 30% 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#hero > h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#hero > p {
+    color: white;
+    text-align: center;
+    padding: 0 15% 0 15%;
+    font-size: 15px;
+}
