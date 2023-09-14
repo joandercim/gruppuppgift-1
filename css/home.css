@@ -5,10 +5,11 @@
       rgb(216, 174, 95, 0.5),
       rgba(0, 0, 0, 0.6)
     ),
-    url('../images/homepage-hero.png');
+    url('../images/home-hero.jpg');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -36,8 +37,82 @@
   max-width: 500px;
 }
 
+/* TOP-INFO SECTION */
+
+.top-info__container {
+  width: 90%;
+  max-width: 1000px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-info__title {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.top-info__card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'card1 card2'
+    'card3 card3';
+  gap: 3rem;
+  margin-top: 3rem;
+  justify-items: center;
+}
+
+.top-info__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  min-width: 300px;
+}
+
+.top-info__card-img {
+  width: 100%;
+  align-self: center;
+}
+
+.top-info__card-subheading {
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.top-info__card--1 {
+  grid-area: card1;
+}
+.top-info__card--2 {
+  grid-area: card2;
+}
+.top-info__card--3 {
+  grid-area: card3;
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 600px) {
   .hero__title {
     font-size: 25px;
+  }
+
+  .top-info__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .top-info__card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'card1'
+      'card2'
+      'card3';
   }
 }
