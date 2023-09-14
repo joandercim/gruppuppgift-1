@@ -142,12 +142,6 @@
   max-width: 500px;
 }
 
-@media (max-width: 600px) {
-  .hero__title {
-    font-size: 25px;
-  }
-}
-
 /* -------- FOOTER -------- */
 .footer {
   height: 350px;
@@ -212,6 +206,10 @@
   }
   .hamburger-icon {
     display: block;
+  }
+
+  .hero__title {
+    font-size: 25px;
   }
 
   .footer {
