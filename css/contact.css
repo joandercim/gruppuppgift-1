@@ -3,3 +3,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    font-family: 'Nunito';
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--almost-black);
+}
+
+#contact-hero {
+    height: 21.875rem;
+    background-image: linear-gradient(
+        to top,
+        rgba(216, 174, 95, 0.457),
+        rgba(0, 0, 0, 0.6)
+      ), url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80');
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--light-cream);
+}
+
+#contact-hero .text-content {
+    display: flex;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact-hero h1 {
+    font-size: 3.25rem;
+    font-weight: 600;
+}
+
+#location-container {
+    padding: 3rem 0;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#location-container h2 {
+    font-weight: 400;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+}
+
+#location-container h4 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+a.booking-btn {
+    border-style: none;
+    background-color: var(--muted-gold);
+    color: var(--light-cream);
+    margin: 1.5rem;
+    padding: 1rem 1.4rem;
+    display: inline-block;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+a.booking-btn:hover {
+    scale: .99;
+    box-shadow: none;
+}
+
+
+/* background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80'); */
