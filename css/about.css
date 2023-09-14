@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .about-body {
+background-color: #FDFBF7;  
+}
+
+#Hero {
+background-image:linear-gradient(
+to top,
+rgb(216, 174, 95, 0.5),
+rgba(0, 0, 0, 0.6)
+),
+url('../images/hotell.jpg');
+height: 400px;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+}
+
+
+.hero_about {
+    font-family: Nunito;
+    line-height: 100px;
+    font-size: 50px;
+   
+}
+.hero_txt {
+    font-family: Nunito;
+    line-height: 23px;
+    font-size: 15px;
+  
+}
+
+.content {
+    display: grid;
+    
+    grid-template-areas:
+    'list article'
+    'list article';
+}
+.about-list {
+    grid-area: list;
+    /* border: 2px solid black; */
+    padding: 50px 50px;
+    height: auto;
+    width: 400px;
+}
+.list_head {
+font-family: Nunito;
+   font-size: 30px;
+   line-height: 50px; 
+}
+/* .ui_design {
+
+} */
+.li_design {
+    font-family: Nunito;
+    padding-top: 60px;
+    font-size: 20px;
+}
+.li_txt {
+    font-family: Nunito;
+    font-size: 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #D8AE5F;
+}
+.about-article {
+    grid-area: article;
+    text-align: left;
+    /* border: 2px solid black; */
+    height: auto;
+    width: 800px;
+    
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+.about-text {
+    padding-left: 40px;
+    font-family: Nunito;
+    margin: 50px auto;
+    font-size: 15px;
+   
+    
+  }
