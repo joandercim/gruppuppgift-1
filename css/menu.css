@@ -54,8 +54,8 @@ body {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
-    width: 1200px;
-    margin: 40px auto;
+    width: 1000px;
+    margin: 60px auto;
 }
 
 #appetizer-container > div {
@@ -141,8 +141,8 @@ body {
     grid-template-rows: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 20px;
-    width: 1200px;
-    margin: 40px auto;
+    width: 1000px;
+    margin: 60px auto;
 }
 
 #Maincourses-container > div {
