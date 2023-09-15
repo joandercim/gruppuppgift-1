@@ -53,7 +53,7 @@
                 dolorum incidunt doloremque mollitia voluptate ipsum dolorem.</p>
         </div>
     </div>
-    <div id="location-container">
+    <section id="location">
         <h2 class="uppercase">Our location</h2>
         <h4>3 E 19th St, 123 Fifth Avenue, NY 10160, New York, USA</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nemo laborum praesentium, sint deleniti porro hic itaque labore dolor unde nulla voluptatem autem minima, inventore commodi eius neque. Consequatur mollitia voluptates omnis quo aperiam nesciunt officia saepe, cumque dicta, soluta, consectetur sunt nulla. Voluptas, autem.</p>
@@ -61,7 +61,33 @@
         <h4 class="uppercase">Telephone reservations <br>
         077-777 66 55</h4>
         <a href="mailto:contact@craftedcoffeeco.com">contact@craftedcoffeeco.com</a>
-    </div>
+    </section>
+
+    <section id="map">
+      <div class="map-container">
+          <div class="gmap_canvas">
+            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          </div>
+      </div>
+      <form action="">
+        <div id="name">
+          <label for="name" id="name-label">Name: *</label>
+          <input type="text" name="name">
+        </div>
+        <div id="email">
+         <label for="email">Email: *</label>
+          <input type="text" name="email">
+        </div>
+        <label for="phone">Tel:</label>
+        <input type="text" name="phone" id="phone">
+        <label for="subject">Subject: *</label>
+        <input type="text" name="subject" id="subject">
+        <textarea name="message" id="message" rows="10"></textarea>
+        <input type="submit">
+      </form>
+    </section>
+
+
 
 
 </main>
