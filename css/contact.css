@@ -98,30 +98,47 @@ a.booking-btn:hover {
 form {
     margin-left: 3.3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
-
-
 
 label {
     display: block;
 }
 
 #name {
-    grid-area: 1 / 1 / 1 / 3;
+    grid-area: 1 / 1 / 1 / 6;
+    border: 2px solid red;
 }
 
 #email {
-    grid-area: 1 / 3 / 1 / end;
+    grid-area: 2 / 1 / 2 / 4;
+    border: 2px solid red;
+    min-height: 0;
 }
 
+#phone {
+    grid-area: 2 / 4 / 2 / 6;
+    border: 2px solid red;
+} 
+
+#subject {
+    grid-area: 3 / 1 / 3 / 6;
+    border: 2px solid red;
+}
+
+#text-area {
+    grid-area: 4 / 1 / 4 / 6;
+    border: 2px solid red;
+} 
+
   .gmap_canvas {
-    overflow:hidden;
+    overflow: hidden;
+    min-height: 100%;
+    border: 5px solid blue;
   } 
   
   .gmap_iframe {
-    min-height: 500px;
-    width: 100%;
     min-width: 50vw;
+    height: 100%;
     }
 /* background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80'); */
