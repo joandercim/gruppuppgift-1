@@ -72,18 +72,38 @@ a {
     line-height: 2;
 }
 
-a.booking-btn {
+a.booking-btn,
+#submit {
     border-style: none;
     background-color: var(--muted-gold);
     color: var(--light-cream);
-    margin: 1.5rem;
     padding: 1rem 1.4rem;
     display: inline-block;
     box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
 
+a.booking-btn {
+    margin: 1.5rem;
+}
+
+#submit {
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
 a.booking-btn:hover {
+    margin-top: calc(1.5rem - 1px);
+    margin-bottom: calc(1.5rem - .5px);
+}
+
+a.booking-btn:hover,
+#submit:hover {
+    border: 1px solid var(--almost-black);
+}
+
+a.booking-btn:active,
+#submit:active {
     scale: .99;
     box-shadow: none;
 }
@@ -91,7 +111,9 @@ a.booking-btn:hover {
 #map {
     display: flex;
     background-color: #e9ecef;
-    padding: 1.5rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    max-width: 200rem;
+    margin: 0 auto;
 }
 
 .map-container, 
@@ -99,40 +121,38 @@ a.booking-btn:hover {
     width: 50%;
 }
 
-.form-container {
-    padding: 1.6rem 0;
-}
-
 #go-map {
     width: 100%;
     height: 500px;
-    filter: brightness( 70% ) contrast( 100% ) saturate( 25% ) blur( 0px ) hue-rotate( 0deg );
+    filter: brightness( 70% ) contrast( 100% ) saturate( 80% ) blur( 0px ) hue-rotate( 0deg );
     transition: filter .5s ease-in-out;
 }
 
 #go-map:hover {
-    filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+    filter: brightness( 90% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
 }
 
 form {
-    max-width: 40rem;
-    margin-left: 3.3rem;
+    margin: 0 3.3rem 0 3.3rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     row-gap: .7rem;
     text-transform: uppercase;
 }
 
-.form__min-width {
-    min-width: 80%;
-}
-
 label {
     display: block;
+    font-size: .9rem;
+    font-weight: 700;
 }
 
 #name {
     grid-area: 1 / 1 / 1 / 7;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: var(--muted-gold);
 }
 
 #name input,
@@ -169,17 +189,8 @@ label {
 
 #text-area #message {
     width: 100%;
-    height: 200px;
+    height: 250px;
+    background-color: var(--light-cream);
+    font-family: 'Nunito';
+    padding: .4rem;
 }
-
-  /* .gmap_canvas {
-    overflow: hidden;
-    min-height: 100%;
-    border: 5px solid blue;
-  } 
-  
-  .gmap_iframe {
-    min-width: 50vw;
-    height: 100%;
-    } */
-/* background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80'); */

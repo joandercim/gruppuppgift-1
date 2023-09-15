@@ -43,7 +43,6 @@
   </header>
 
   <!-- Main area -->
-
   <main>
     <div id="contact-hero">
         <div class="text-content flex">
@@ -63,6 +62,7 @@
         <a href="mailto:contact@craftedcoffeeco.com">contact@craftedcoffeeco.com</a>
     </section>
 
+    <!-- Form/Map area -->
     <section id="map">
       <div class="map-container">
             <iframe id="go-map"src="https://maps.google.com/maps?q=stockholm&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no"></iframe>
@@ -71,11 +71,11 @@
         <form action="">
           <div id="name">
             <label for="name" id="name-label">Name: *</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
           </div>
           <div id="email">
             <label for="email">Email: *</label>
-            <input type="text" name="email">
+            <input type="text" name="email" required>
           </div>
           <div id="phone">
             <label for="phone">Tel:</label>
@@ -88,18 +88,10 @@
           <div id="text-area">
             <textarea name="message" id="message"></textarea>
           </div>
-          <input id="submit" value="Send" type="submit">
+          <input id="submit" value="Send" class="uppercase" type="submit">
         </form>
       </div>
-
-
-
-
     </section>
-
-
-
-
 </main>
 
   <footer class="footer">
