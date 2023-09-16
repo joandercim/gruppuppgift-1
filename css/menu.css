@@ -270,11 +270,22 @@ body {
     font-size: 25px;
     background: none;
     color: white;
-    border: 3px solid white;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 500ms ease;
 }
+
+#book-btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* #book-btn:hover a {
+    color: black;
+} */
+
 
 #book-btn > a {
     color: white;
