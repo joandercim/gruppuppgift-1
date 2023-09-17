@@ -41,7 +41,7 @@
   max-width: 500px;
 }
 
-/* TOP-INFO SECTION */
+/* --------- TOP-INFO SECTION --------- */
 
 .top-info__container {
   padding-top: 5rem;
@@ -63,7 +63,6 @@
 .top-info__card {
   display: flex;
   flex-direction: column;
-  /* max-width: 440px; */
   min-width: 300px;
 }
 
@@ -74,7 +73,7 @@
   object-fit: cover;
 }
 
-.top-info__card-subheading {
+.top-info__card-title {
   font-weight: 500;
   font-size: 1.375rem;
   margin-top: 1rem;
@@ -96,7 +95,7 @@
   object-fit: cover;
 }
 
-/* MENU SECTION */
+/* --------- MENU SECTION --------- */
 
 #menu-section {
   background-color: var(--almost-black);
@@ -165,7 +164,7 @@
   color: var(--almost-black);
 }
 
-/* CTA MENU SECTION */
+/* --------- CTA MENU SECTION --------- */
 
 #cta-menu-section {
   background-image: linear-gradient(
@@ -211,7 +210,7 @@
   min-width: 168px;
 }
 
-/* PASTRY IMAGES SECTION */
+/* --------- PASTRY IMAGES SECTION --------- */
 
 #pastry-img-section {
   background-color: var(--light-cream);
@@ -232,7 +231,7 @@
   max-width: 370px;
   width: 30%;
   flex: 0 1 auto;
-  transition: transform;
+  transition: transform, box-shadow;
   transition-duration: 150ms;
   border-radius: 2px;
 }
@@ -243,7 +242,7 @@
     0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-/* REVIEWS SECTION */
+/* --------- REVIEWS SECTION --------- */
 
 #reviews-section {
   background-image: linear-gradient(
@@ -311,7 +310,7 @@
   margin-top: 1rem;
 }
 
-/* RESERVATION SECTION */
+/* --------- RESERVATION SECTION --------- */
 
 #reservation-section {
   background-color: var(--light-cream);
@@ -375,7 +374,7 @@
   font-size: 1.875rem;
 }
 
-/* MEDIA QUERIES */
+/* --------- MEDIA QUERIES --------- */
 
 /* TABLETS */
 @media (max-width: 1000px) {
