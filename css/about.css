@@ -46,9 +46,6 @@ color: white;
     grid-template-columns: 10% 25% 25% 25% 15%;
     grid-template-rows: auto;
     justify-content: space-between;
-    /* grid-template-areas:
-    "listHead txt txt"
-    "list cafe cafe"; */
     column-gap: 25px;
     row-gap: 15px;
    
@@ -58,12 +55,6 @@ color: white;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    /* grid-area: list; */
-    /* border: 2px solid black; */
-    /* padding-left: 200px; */
-    /* margin: 50px auto; */
-    /* height: 600px;
-    width: 200px; */
 }
 .list_head {
    grid-column-start: 2;
@@ -73,11 +64,9 @@ color: white;
     font-family: Nunito;
     font-size: 30px;
     padding-top: 3em;
-    /* line-height: 50px;  */
+   
 }
-/* .ui_design {
 
-} */
 .li_design {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -86,7 +75,6 @@ color: white;
     font-family: Nunito;
     list-style-type: none;
     margin: 0;
-    /* padding-top: 60px; */
     font-size: 20px;
 }
 .fa-cube{
@@ -111,17 +99,13 @@ color: white;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* grid-area: article; */
     text-align: left;
-    /* border: 2px solid black; */
     margin: 50px auto;
-    /* height: auto; */
     width: 600px;
     
 }
 .about-img-box{
     background-image: url('../images/Café.png');
-    /* height: 525px; */
     width: 650px;
     height: 450px;
     background-position: center;
@@ -134,17 +118,10 @@ color: white;
     grid-row-end: 2;
     
 }
-/* .cafe {
-    grid-area: cafe;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  } */
+
 .about-text {
     grid-column-start: 2;
    grid-column-end: 4;
-    /* padding-left: 40px; */
     font-family: Nunito;
     margin: 15px auto;
     font-size: 15px;
@@ -155,7 +132,6 @@ color: white;
 
   .about-team {
     display: flex;
-    /* height: 250px; */
     margin: 50px auto;
     border-bottom: 1px solid #D8AE5F;
    flex-flow: row wrap;
@@ -165,8 +141,7 @@ color: white;
   .headLine {
     padding-top: 15px;
     font-family: Nunito;
-    /* width: auto; */
-    /* height: auto; */
+   
     font-size: 30px;
     
   }
@@ -178,15 +153,10 @@ color: white;
   }
 
   .team_socials {
-    /* background-color: #4d4d4d; */
-    /* width: 80%;
-    max-width: 1000px; */
+ 
     display: flex;
     justify-content: space-evenly;
-    /* flex-flow: row wrap;
-    column-gap: 40px;
-    row-gap: 30px;
-    justify-content: center; */
+  
 
 
   }
@@ -212,43 +182,6 @@ color: white;
     gap:20px;
   }
 
-  /* .team1 {
-    background-image: url('../images/Tony.png') ;
-    width: 350px;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    resize: both;
-    background-repeat: no-repeat;
-  }
- 
-  .team2 {
-    background-image: url('../images/Mike.png') ;
-    width: 350px;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    resize: both;
-    background-repeat: no-repeat;
-  }
- 
-  .team3 {
-    background-image: url('../images/Edward.png') ;
-    width: 350px;
-    height: 500px;
-    background-position: center;
-    /* background-size: cover; */
-    /* resize: both; */
-    /* background-repeat: no-repeat; */
-   */
-
-  .team_socials {
-display: flex;
-  /* gap: 1.2rem;
-  margin-top: 1.2rem;
-  align-items: center;
-  margin-left: 1.3rem; */
-  }
 
 
 
