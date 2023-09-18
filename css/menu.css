@@ -1,28 +1,573 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Nunito Sans', sans-serif;
-    margin: 0;
+  font-family: "Nunito";
+  margin: 0;
+  background-color: #222;
 }
 #hero {
-    background: url(../images/menuhero.jpeg);
-    background-size: cover;
-    background-position: 30% 50%;
-    height: 400px;
+  background-image: linear-gradient(
+      to top,
+      rgb(216, 174, 95, 0.5),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/menuhero.jpeg);
+  background-size: cover;
+  background-position: 30% 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#hero > h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#hero > p {
+  color: white;
+  text-align: center;
+  padding: 0 15% 0 15%;
+  font-size: 15px;
+}
+
+#appetizer-header {
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: #191919;
 }
-#hero > h1 {
+
+#appetizer-header > h2 {
+    font-size: 30px;
     color: white;
-    font-size: 50px;
-    margin-bottom: 10px;
 }
-#hero > p {
+
+#appetizer-container {
+    min-height: 620px;
+    display: grid;
+    background-color: #222;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+#appetizer-container > div {
+    color: white;
+    border-bottom: 2px solid #D8AE5F;
+    height: 130px;
+    max-width: 310px;
+}
+
+#appetizer-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#appetizer-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#appetizer-item3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#appetizer-item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#appetizer-item5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#appetizer-item6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#appetizer-item7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#appetizer-item8 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#appetizer-item9 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#maincourses-header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+}
+
+#maincourses-header > h2 {
+    font-size: 30px;
+    color: white;
+}
+
+#maincourses-container {
+    min-height: 620px;
+    display: grid;
+    background-color: #222;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+
+#maincourses-container > div {
+    color: white;
+    border-bottom: 2px solid #D8AE5F;
+    height: 130px;
+    max-width: 310px;
+}
+
+#maincourses-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#maincourses-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#maincourses-item3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#maincourses-item4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#maincourses-item5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#maincourses-item6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#maincourses-item7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#maincourses-item8 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+#maincourses-item9 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#beverages-header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+}
+
+#beverages-header > h2 {
+    font-size: 30px;
+    color: white;
+}
+
+#beverages-container {
+    min-height: 620px;
+    display: flex; 
+    flex-flow: row wrap;
+    background-color: #222;
+    max-width: 1000px;
+    margin: 60px auto;
+    justify-content: center;
+}
+
+#beverages-container > div {
+    color: white;
+    border-bottom: 2px solid #D8AE5F;
+    height: 130px;
+    max-width: 310px;
+    margin: 10px;
+    flex-basis: 1 1 auto;
+}
+
+#reservations-hero {
+    background-image: linear-gradient(
+        to top,
+        rgb(216, 174, 95, 0.5),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(../images/reservations-hero.jpg);
+    background-size: cover;
+    background-position: 30% 50%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #191919;
     color: white;
     text-align: center;
-    padding: 0 15% 0 15%;
+}
+
+#reservations-hero > h2 {
+    font-size: 30px;
+}
+
+#reservations-hero > p {
     font-size: 15px;
+}
+
+#book-btn {
+    font-size: 25px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms ease;
+}
+
+#book-btn:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* #book-btn:hover a {
+    color: black;
+} */
+
+
+#book-btn > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#reservations-hero > h3 {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 661px) and (max-width: 989px) {
+
+    #appetizer-container {
+        min-height: 750px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        align-items: center;
+    }
+     
+    #appetizer-item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: end;
+    }
+    #appetizer-item2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: start;
+    }
+    #appetizer-item3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: end;
+    }
+    #appetizer-item4 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: start;
+    }
+    #appetizer-item5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: end;
+    }
+    #appetizer-item6 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: start;
+    }
+    #appetizer-item7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: end;
+    }
+    #appetizer-item8 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: start;
+    }
+    #appetizer-item9 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        justify-self: center;
+    }
+    
+
+    #maincourses-container {
+        min-height: 750px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        align-items: center;
+    }
+     
+    #maincourses-item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: end;
+    }
+    #maincourses-item2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: start;
+    }
+    #maincourses-item3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: end;
+    }
+    #maincourses-item4 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-self: start;
+    }
+    #maincourses-item5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: end;
+    }
+    #maincourses-item6 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        justify-self: start;
+    }
+    #maincourses-item7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: end;
+    }
+    #maincourses-item8 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        justify-self: start;
+    }
+    #maincourses-item9 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 660px) {
+
+    #appetizer-container {
+        min-height: 1350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        justify-items: center;
+    }
+     
+    #appetizer-item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #appetizer-item2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #appetizer-item3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #appetizer-item4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #appetizer-item5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #appetizer-item6 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    #appetizer-item7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    #appetizer-item8 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    #appetizer-item9 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+    
+
+    #maincourses-container {
+        min-height: 1350px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        justify-items: center;
+    }
+     
+    #maincourses-item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #maincourses-item2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #maincourses-item3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #maincourses-item4 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    #maincourses-item5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    #maincourses-item6 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    #maincourses-item7 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    #maincourses-item8 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    #maincourses-item9 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+    
 }
