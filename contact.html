@@ -26,7 +26,7 @@
       <nav class="mobile-menu">
         <a href="about.html">About</a>
         <a href="menu.html">Services</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
 
@@ -45,7 +45,7 @@
   <!-- Main area -->
   <main>
     <div id="contact-hero">
-        <div class="text-content flex">
+        <div class="text-content">
             <h1>Contact us</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing 
                 elit. Aspernatur ut libero adipisci dignissimos 
@@ -63,35 +63,39 @@
     </section>
 
     <!-- Form/Map area -->
-    <section id="map">
-      <div class="map-container">
-            <iframe id="go-map"src="https://maps.google.com/maps?q=stockholm&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no"></iframe>
-      </div>
-      <div class="form-container">
-        <form action="">
-          <div id="name">
-            <label for="name" id="name-label">Name: *</label>
-            <input type="text" name="name" required>
-          </div>
-          <div id="email">
-            <label for="email">Email: *</label>
-            <input type="text" name="email" required>
-          </div>
-          <div id="phone">
-            <label for="phone">Tel:</label>
-            <input type="text" name="phone" id="phone">
-          </div>
-          <div id="subject">
-            <label for="subject">Subject: *</label>
-            <input type="text" name="subject">
-          </div>
-          <div id="text-area">
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <input id="submit" value="Send" class="uppercase" type="submit">
-        </form>
-      </div>
-    </section>
+    <div class="contacts-container">
+      <h2 class="uppercase">Send us a message</h2>
+      <section id="contacts">
+        <div class="map-container">
+              <iframe id="go-map"src="https://maps.google.com/maps?q=stockholm&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="form-container">
+          <form action="">
+            <div id="name">
+              <label for="name" id="name-label">Name: *</label>
+              <input type="text" name="name" required>
+            </div>
+            <div id="email">
+              <label for="email">Email: *</label>
+              <input type="text" name="email" required>
+            </div>
+            <div id="phone">
+              <label for="phone">Tel:</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div id="subject">
+              <label for="subject">Subject:</label>
+              <input type="text" name="subject">
+            </div>
+            <div id="text-area">
+              <label for="message">Message: *</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <input id="submit" value="Send" class="uppercase" type="submit">
+          </form>
+        </div>
+      </section>
+    </div>
 </main>
 
   <footer class="footer">
