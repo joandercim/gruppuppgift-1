@@ -20,12 +20,10 @@
     <header class="header">
       <a href="index.html" class="header__title">Crafted Coffee Co.</a>
 
-      <!-- Mobile menu -->
+      <!-- MOBILE MENU -->
       <div class="mobile-menu__container">
         <input type="checkbox" id="menuToggle" />
-
         <label for="menuToggle" class="hamburger-icon"> &#9776; </label>
-
         <nav class="mobile-menu">
           <a href="about.html">About</a>
           <a href="menu.html">Services</a>
@@ -33,7 +31,7 @@
         </nav>
       </div>
 
-      <!-- Desktop menu -->
+      <!-- DESKTOP MENU -->
       <nav class="desktop-menu">
         <ul class="nav__list">
           <li class="nav__list-item"><a href="about.html">About Us</a></li>
@@ -44,23 +42,147 @@
         </ul>
       </nav>
     </header>
-
-    <!-- Main content -->
-    <main class="main-content">
-      <!-- Hero section -->
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION -->
       <section id="hero">
-        <div class="hero__container">
+        <div class="container hero__container">
           <h1 class="hero__title">
             Coffee and pastries worth waking up for
           </h1>
           <p class="hero__content">
-            Fuel up for your day with the delightful aroma of freshly baked
-            pastries and artisanal coffee at Crafted Coffee Co.
+            Fuel up for your day with the delightful aroma of freshly baked organic
+            pastries and fairtrade coffee at Crafted Coffee Co.
           </p>
         </div>
       </section>
-    </main>
 
+      <!-- TOP-INFO SECTION  -->
+      <section id="top-info">
+        <div class="container top-info__container">
+          <div class="top-info__card-container">
+            <article class="top-info__card top-info__card--1">              
+            <img class="top-info__card-img" src="/images/home-pastry.png" alt="pastry" />       
+            <h3 class="top-info__card-title">
+              Freshly Baked Organic Pastries
+            </h3>
+            <p class="top-info__card-content">
+              At Crafted Coffee, we take pride in our selection of freshly
+              baked organic pastries that are made on-site daily. From
+              classic croissants to indulgent cinnamon rolls, our pastries
+              are made with high-quality ingredients and baked to
+              perfection. Whether you’re grabbing a pastry to-go or
+              enjoying it with a cup of coffee, each bite is a heavenly
+              delight that will leave you wanting more.
+            </p>
+          </article>
+            <article class="top-info__card top-info__card--2">
+            <img class="top-info__card-img" src="/images/home-coffee-fairtrade.png" alt="" />
+            <h3 class="top-info__card-title">
+              Fairtrade Coffee
+            </h3>
+            <p class="top-info__card-content">
+              Our coffee is more than just a caffeine fix – it’s a work of art. Crafted Coffee sources the finest coffee beans from around the world and roasts them in-house to create a bold and complex flavor profile. Whether you prefer a classic latte or a bold pour-over, our knowledgeable baristas will craft the perfect cup of coffee to suit your taste. The rich aroma and flavor of our artisanal coffee is truly a treat for the senses.
+            </p>
+          </article>
+          <article class="top-info__card top-info__card--3">
+            <img class="top-info__card-img top-info__card-3-img" src="/images/home-atmosphere-1.jpg" alt="" />
+            <h3 class="top-info__card-title">
+              Welcoming Atmosphere
+            </h3>
+            <p class="top-info__card-content">
+              At Crafted Coffee, we believe that a great cup of coffee is best enjoyed in a warm and inviting atmosphere. Our cozy cafe is designed to make you feel right at home, with comfortable seating and a laid-back ambiance. Whether you’re catching up with friends or settling in for some solo work time, our welcoming environment is the perfect place to relax and recharge.
+            </p>
+          </article>
+        </div>
+      </section>
+
+
+    <!-- MENU SECTION -->
+    <section id="menu-section">
+      <div class="container menu-section__container">
+      <h2 class="menu-section__title">OUR MENU</h2>
+        <div class="menu__container">          
+          <div class="menu__item menu__item-1">Croissant - $3.50<br><br>
+            A freshly baked buttery and flaky croissant, perfect for breakfast or a light snack.</div>
+          <div class="menu__item menu__item-2">Latte - $4.50<br><br>
+            A smooth and creamy latte, topped with a delicate milk foam for the perfect coffee experience.</div>
+          <div class="menu__item menu__item-3">Bagel with Cream Cheese - $4.50<br><br>
+            A classic New York-style bagel toasted and spread with a generous amount of creamy and tangy cream cheese.</div>
+          <div class="menu__item menu__item-4">Cappuccino - $4.50<br><br>
+            A classic Italian beverage consisting of equal parts espresso, steamed milk, and velvety milk foam.</div>
+          <div class="menu__item menu__item-5">Chocolate Croissant - $4.50<br><br>
+            A delectable croissant filled with rich chocolate for the ultimate indulgence.</div>
+          <div class="menu__item menu__item-6">Muffin - $3.50<br><br>
+            A freshly baked muffin, available in a variety of flavors such as blueberry, chocolate chip, and banana nut.</div>
+          <div class="menu__item menu__item-7">Quiche Lorraine - $6.50<br><br>
+            A savory quiche filled with bacon, cheese, and a rich egg custard baked to perfection in a buttery crust.</div>
+          <div class="menu__item menu__item-8">Iced Coffee - $4.50<br><br>
+            A refreshing and energizing iced coffee, perfect for those hot summer days.</div>
+          <div class="menu__item menu__item-9">Iced Latte - $5.50<br><br>
+            A deliciously creamy and refreshing iced latte, perfect for any coffee lover.</div>
+        </div>
+        <button class="menu__btn"><a href="menu.html">VIEW ALL MENU</a></button>
+      </div>    
+    </section>
+
+    <!-- CTA MENU SECTION -->
+    <section id="cta-menu-section">
+      <div class="container cta-menu__container">
+        <div class="cta-menu__content">
+          <h2 class="cta-menu__title">Crafted Coffees Organic Delights</h2>
+          <p class="cta-menu__text">At Crafted Coffee Co, we combine the finest ingredients with skilled craftsmanship to create a range of freshly baked pastries and artisanal coffee. Our menu features a variety of sweet and savory options, all made with care and attention to detail.</p>
+        </div>
+        <button class="menu__btn cta-menu__btn"><a href="menu.html">VIEW ALL MENU</a></button>
+      </div>
+    </section>
+
+    <!-- PASTRY IMAGES SECTION -->
+    <section id="pastry-img-section">
+      <div class="container pastry-img__container">
+        <img class="pastry-img" src="images/home-cake.png" alt="">
+        <img class="pastry-img" src="images/home-coffee-2.png" alt="">
+        <img class="pastry-img" src="images/home-pastry-2.png" alt="">
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews-section">
+      <div class="container reviews__container">
+        <h2 class="reviews__title">What They Say</h2>
+        <div class="reviews__card-container">
+          <article class="reviews__card reviews__card-1">
+            <img class="reviews__card-img" src="images/home-review-avatar-1.png" alt="">
+            <p class="reviews__card-content">Crafted Coffee Co is a coffee lover's paradise. The aroma of fresh coffee and the sight of colorful pastries are a feast for the senses. The staff's warm hospitality and the cozy ambiance make it a perfect spot for a relaxing break.</p>
+            <p class="reviews__card-name">SARAH</p>
+          </article>
+          <article class="reviews__card reviews__card-2">
+            <img class="reviews__card-img" src="images/home-review-avatar-2.png" alt="">
+            <p class="reviews__card-content">Crafted Coffee Co is hands-down the best bakery and coffee shop in town. The croissants are flaky and buttery, and the coffee is rich and smooth. The staff is always friendly and welcoming, making it my go-to spot for a quick treat.</p>
+            <p class="reviews__card-name">CAROL</p>
+          </article>
+          <article class="reviews__card reviews__card-3">
+            <img class="reviews__card-img" src="images/home-review-avatar-3.png" alt="">
+            <p class="reviews__card-content">Crafted Coffee Co is a hidden gem. The coffee is divine, and the pastries are to die for! The decor is cozy and inviting, and the staff is always friendly and ready with a smile. It's the perfect spot to take a break from the hustle and bustle.</p>
+            <p class="reviews__card-name">JAMES</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section id="reservation-section">
+      <div class="container reservation__container">
+        <h2 class="reservation__title">Reservation</h2>
+        <p class="reservation__content">Reserve your table at Crafted Coffee for a relaxing break accompanied by delicious coffee and pastries. Call or visit our website to book your spot and enjoy a warm and welcoming atmosphere in our cozy cafe.</p>
+        <button class="reservation__btn"><a href="tel:1234567890">CALL US TO BOOK</a></button>
+        <p class="reservation__phone-title">Telephone number:</p>
+        <p class="reservation__phone-number">12 34 56 7890</p>
+      </div>
+    </section>
+  </main>
+
+    <!-- FOOTER  -->
     <footer class="footer">
       <div class="footer__container">
         <div>

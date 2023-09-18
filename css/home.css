@@ -1,3 +1,8 @@
+.container {
+  width: 90%;
+  max-width: 1000px;
+}
+
 /* --------- HERO SECTION --------- */
 #hero {
   background-image: linear-gradient(
@@ -5,10 +10,11 @@
       rgb(216, 174, 95, 0.5),
       rgba(0, 0, 0, 0.6)
     ),
-    url('../images/homepage-hero.png');
+    url('../images/home-hero.jpg');
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -18,7 +24,6 @@
 }
 
 .hero__container {
-  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,18 +31,438 @@
 }
 
 .hero__title {
-  font-size: 50px;
+  font-size: 3.125rem;
 }
 
 .hero__content {
   margin-top: 1rem;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 0.9375rem;
   max-width: 500px;
 }
 
-@media (max-width: 600px) {
+/* --------- TOP-INFO SECTION --------- */
+
+.top-info__container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-info__card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'card1 card2'
+    'card3 card3';
+  gap: 3rem;
+  justify-items: center;
+}
+
+.top-info__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.top-info__card-img {
+  width: 100%;
+  align-self: center;
+  min-height: 350px;
+  object-fit: cover;
+}
+
+.top-info__card-title {
+  font-weight: 500;
+  font-size: 1.375rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.top-info__card--1 {
+  grid-area: card1;
+}
+.top-info__card--2 {
+  grid-area: card2;
+}
+.top-info__card--3 {
+  grid-area: card3;
+}
+
+.top-info__card-3-img {
+  max-height: 476px;
+  object-fit: cover;
+}
+
+/* --------- MENU SECTION --------- */
+
+#menu-section {
+  background-color: var(--almost-black);
+}
+
+.menu-section__container {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-section__title {
+  text-align: center;
+  font-size: 1.875rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 2rem;
+}
+
+.menu__container {
+  display: grid;
+  background-color: var(--almost-black);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.25rem;
+  row-gap: 1.25rem;
+  margin: 2.5rem auto;
+}
+
+.menu__item {
+  color: white;
+  border-bottom: 2px solid var(--muted-gold);
+  height: 130px;
+}
+
+.menu__btn {
+  align-self: center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  background-color: transparent;
+}
+
+.menu__btn a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--almost-black);
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 0.9375rem 1.875rem;
+  transition: background-color, color;
+  transition-duration: 200ms;
+}
+
+.menu__btn a:hover {
+  background-color: white;
+  color: var(--almost-black);
+}
+
+/* --------- CTA MENU SECTION --------- */
+
+#cta-menu-section {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('../images/home-cta-menu.jpg');
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.cta-menu__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.cta-menu__content {
+  max-width: 600px;
+}
+
+.cta-menu__title {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.cta-menu__text {
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+.cta-menu__btn a {
+  background-color: transparent;
+  min-width: 168px;
+}
+
+/* --------- PASTRY IMAGES SECTION --------- */
+
+#pastry-img-section {
+  background-color: var(--light-cream);
+  display: flex;
+  justify-content: center;
+}
+
+.pastry-img__container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.pastry-img {
+  max-width: 370px;
+  width: 30%;
+  flex: 0 1 auto;
+  transition: transform, box-shadow;
+  transition-duration: 150ms;
+  border-radius: 2px;
+}
+
+.pastry-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* --------- REVIEWS SECTION --------- */
+
+#reviews-section {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../images/home-reviews-bg.jpg');
+  height: 420px;
+  background-position: 30% 60%;
+  color: white;
+}
+
+.reviews__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__title {
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.reviews__card-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.reviews__card {
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: #1a1a1a;
+  border-radius: 1.25rem;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin-top: 6rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.reviews__card-img {
+  width: 70px;
+  border: 4px solid var(--reddish-brown);
+  border-radius: 50%;
+  margin-top: -70px;
+}
+
+.reviews__card-content {
+  font-weight: 300;
+  margin-top: 2rem;
+  font-size: 0.9375rem;
+}
+
+.reviews__card-name {
+  margin-top: 1rem;
+}
+
+/* --------- RESERVATION SECTION --------- */
+
+#reservation-section {
+  background-color: var(--light-cream);
+  height: 600px;
+}
+
+.reservation__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reservation__title {
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #212121;
+  margin-top: 8rem;
+}
+
+.reservation__content {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin-top: 0.8rem;
+}
+
+.reservation__btn {
+  border: none;
+  background-color: transparent;
+  margin-top: 2.5rem;
+}
+
+.reservation__btn a {
+  padding: 0.9375rem 1.25rem;
+  background-color: var(--muted-gold);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: background-color;
+  transition-duration: 200ms;
+  border-radius: 2px;
+}
+
+.reservation__btn a:hover {
+  background-color: var(--almost-black);
+}
+
+.reservation__phone-title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+}
+
+.reservation__phone-number {
+  font-size: 1.875rem;
+}
+
+/* --------- MEDIA QUERIES --------- */
+
+/* TABLETS */
+@media (max-width: 1000px) {
+  .menu__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu__item-7 {
+    display: none;
+  }
+
+  .reviews__card-3 {
+    display: none;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 720px) {
+  .top-info__card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'card1'
+      'card2'
+      'card3';
+  }
+
+  .top-info__card {
+    max-width: 440px;
+    min-width: 300px;
+  }
+
+  .top-info__card-3-img {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 650px) {
   .hero__title {
-    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+
+  .top-info__title {
+    font-size: 1.5rem;
+  }
+
+  .menu__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .menu__item-7,
+  .menu__item-8,
+  .menu__item-9 {
+    display: none;
+  }
+
+  #cta-menu-section {
+    height: 400px;
+  }
+
+  .cta-menu__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pastry-img__container {
+    flex-direction: column;
+  }
+
+  .pastry-img {
+    width: 100%;
+  }
+
+  .reviews__card-2 {
+    display: none;
+  }
+
+  .reservation__title {
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-info__card {
+    max-width: 350px;
+  }
+
+  .top-info__card-3-img {
+    min-height: 350px;
   }
 }
