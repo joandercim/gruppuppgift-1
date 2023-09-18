@@ -60,6 +60,7 @@
   display: inline-block;
   transition: transform;
   transition-duration: 150ms;
+  border-bottom: 2px solid #d8ae5f00;
 }
 
 .nav__list-item a:hover {
