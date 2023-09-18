@@ -6,7 +6,7 @@
   }
 
   .about-body {
-background-color: #FDFBF7;  
+background-color: var(--light-cream);  
 }
 
 #Hero {
@@ -27,7 +27,7 @@ flex-direction: column;
 color: white;
 }
 
-
+/* The hero picture */
 .hero_about {
     font-family: Nunito;
     line-height: 100px;
@@ -40,7 +40,7 @@ color: white;
     font-size: 15px;
   
 }
-
+/* The main content page */
 .content {
     display: grid;
     grid-template-columns: 10% 25% 25% 25% 15%;
@@ -50,6 +50,7 @@ color: white;
     row-gap: 15px;
    
 }
+/* The list on the left */
 .about-list {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -78,11 +79,11 @@ color: white;
     font-size: 20px;
 }
 .fa-cube{
-    color: #D8AE5F;
+    color: var(--muted-gold );
     font-size: 30px;
     margin-right: 15px;
-    border: 5px solid #D8AE5F;
-    border-radius: 20px;
+     border: 5px solid var(--muted-gold );
+    border-radius: 10px;
     
 
 }
@@ -91,9 +92,10 @@ color: white;
     font-family: Nunito;
     font-size: 15px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #D8AE5F;
+    border-bottom: 1px solid var(--muted-gold);
     width: 250px;
 }
+/* Picture and some text on the right */
 .about-article {
     grid-column-start: 3;
     grid-column-end: 3;
@@ -133,7 +135,7 @@ color: white;
   .about-team {
     display: flex;
     margin: 50px auto;
-    border-bottom: 1px solid #D8AE5F;
+    border-bottom: 1px solid var(--muted-gold);
    flex-flow: row wrap;
    justify-content: center;
    column-gap: 150px;
@@ -152,13 +154,11 @@ color: white;
     font-family: Nunito;
   }
 
+  /* The Team social media and photo */
   .team_socials {
  
     display: flex;
     justify-content: space-evenly;
-  
-
-
   }
   .team {
     text-align: center;
@@ -176,10 +176,12 @@ color: white;
     font-family: Nunito;
   }
   .social {
-    /* color: #181717 ; */
+    color: black;
     display: flex;
     justify-content: center;
-    gap:20px;
+    margin-top: 10px;
+    gap:25px;
+    
   }
 
 
@@ -195,6 +197,15 @@ color: white;
 
 
   /* Media qu */
+
+
+@media (max-width: 768px) {
+    .about-img-box {
+        display: none;
+    }
+ 
+}
+
   @media (max-width: 600px) {
     .content {
         grid-template-columns: 1fr;
@@ -210,6 +221,7 @@ color: white;
     }
     .about-article {
         width: 300px;
+        text-align: center;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
