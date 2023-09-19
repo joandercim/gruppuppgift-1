@@ -64,7 +64,6 @@
 }
 
 .nav__list-item a:hover {
-  transform: scale(1.05);
   border-bottom: 2px solid #d8ae5f;
 }
 
