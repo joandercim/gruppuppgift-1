@@ -67,7 +67,7 @@
   border-bottom: 2px solid #d8ae5f;
 }
 
-.nav__list-item--active {
+#nav__list-item--active {
   border-bottom: 2px solid #d8ae5f;
 }
 
