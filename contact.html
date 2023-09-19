@@ -15,32 +15,32 @@
     <title>Crafted Coffee Co. | Contact</title>
 </head>
 <header class="header">
-    <a href="index.html" class="header__title">Crafted Coffee Co.</a>
+  <a href="index.html" class="header__title">Crafted Coffee Co.</a>
 
-    <!-- Mobile menu -->
-    <div class="mobile-menu__container">
-      <input type="checkbox" id="menuToggle" />
-
-      <label for="menuToggle" class="hamburger-icon"> &#9776; </label>
-
-      <nav class="mobile-menu">
-        <a href="about.html">About</a>
-        <a href="menu.html">Services</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </div>
-
-    <!-- Desktop menu -->
-    <nav class="desktop-menu">
-      <ul class="nav__list">
-        <li class="nav__list-item"><a href="about.html">About Us</a></li>
-        <li class="nav__list-item"><a href="menu.html">Menu</a></li>
-        <li class="nav__list-item">
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu__container">
+    <input type="checkbox" id="menuToggle" />
+    <label for="menuToggle" class="hamburger-icon"> &#9776; </label>
+    <nav class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
+
+  <!-- DESKTOP MENU -->
+  <nav class="desktop-menu">
+    <ul class="nav__list">
+      <li class="nav__list-item"><a href="index.html">Home</a></li>
+      <li class="nav__list-item"><a href="menu.html">Menu</a></li>
+      <li class="nav__list-item"><a href="about.html">About us</a></li>
+      <li class="nav__list-item">
+        <a href="contact.html" id="nav__list-item--active">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
   <!-- Main area -->
   <main>
@@ -72,16 +72,16 @@
         <div class="form-container">
           <form action="">
             <div id="name">
-              <label for="name" id="name-label">Name: *</label>
-              <input type="text" name="name" required>
+              <label for="fullname">Name: *</label>
+              <input type="text" name="fullname" id="fullname" required>
             </div>
             <div id="email">
-              <label for="email">Email: *</label>
-              <input type="text" name="email" required>
+              <label for="e-mail">Email: *</label>
+              <input type="text" name="e-mail" id="e-mail" required>
             </div>
             <div id="phone">
-              <label for="phone">Tel:</label>
-              <input type="text" name="phone" id="phone">
+              <label for="tel">Tel:</label>
+              <input type="text" name="tel" id="tel">
             </div>
             <div id="subject">
               <label for="subject">Subject:</label>
