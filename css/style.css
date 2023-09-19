@@ -154,6 +154,10 @@
   cursor: pointer;
 }
 
+.fa-clock {
+  cursor: default;
+}
+
 .footer__location-address,
 .footer__opening-times {
   margin-top: 1.2rem;
