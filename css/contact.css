@@ -16,7 +16,6 @@ body {
 
 p {
     font-weight: 300;
-    font-size: 1em;
 }
 
 a {
@@ -85,10 +84,6 @@ a.booking-btn,
 
 a.booking-btn {
     margin: 1.5rem;
-}
-
-#submit {
-
 }
 
 a.booking-btn:hover,
