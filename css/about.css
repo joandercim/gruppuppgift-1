@@ -207,6 +207,9 @@ color: white;
         column-gap: 10px;
 
     } 
+    .li_txt {
+        max-width: 220px;
+    }
     .about-img-box {
         display: none;
     }
