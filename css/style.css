@@ -67,7 +67,7 @@
   border-bottom: 2px solid #d8ae5f;
 }
 
-.nav__list-item--active {
+#nav__list-item--active {
   border-bottom: 2px solid #d8ae5f;
 }
 
@@ -152,6 +152,10 @@
   color: #d8ae5f;
   font-size: 18px;
   cursor: pointer;
+}
+
+.fa-clock {
+  cursor: default;
 }
 
 .footer__location-address,
