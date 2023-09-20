@@ -1,6 +1,6 @@
 # Wireframes
 
-### Home page | Richard
+### Home page | Rickard
 [Länk till wireframe.cc](https://wireframe.cc/lU8zk8)
 
 ### Menu page | Johan
